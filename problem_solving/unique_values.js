@@ -1,13 +1,13 @@
 const unique = (arr) => {
   let first = 0;
-  let second = 1;
-  while (second <= arr.length) {
+  for (second = 1; second <= arr.length; second++) {
     if (arr[first] !== arr[second]) {
       first += 1;
       arr[first] = arr[second];
     }
-    second += 1;
   }
   return first;
 };
-console.log(unique([]));
+console.log(
+  unique([1, 1, 1, 1, 1, 1, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 7, 7, 7])
+);

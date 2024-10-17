@@ -26,6 +26,7 @@
 const anagram_frequency = (arr1, arr2) => {
   let frequencyCouner1 = {};
   let frequencyCouner2 = {};
+  console.log(typeof arr1);
 
   for (let char of arr1) {
     frequencyCouner1[char] = (frequencyCouner1[char] || 0) + 1;
